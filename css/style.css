@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h2,
+h1 {
+    color: #533738;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+.section_header_menu {
+    background: url("../img/back/list_one_background.jpg") center center/cover no-repeat;
+    min-height: 715px;
+}
+
+.logo_scandi {
+    padding-left: 98px;
+    padding-top: 36px;
+    display: flex;
+}
+
+.scandi_link_text {
+    padding-top: 3px;
+}
+
+.scandi_link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header_menu_list {
+    display: flex;
+    margin-bottom: 20px;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-top: -22px;
+}
+
+.menu_wrapper {
+    justify-content: space-between;
+    max-width: 844px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+}
+
+.number {
+    position: absolute;
+    top: 36px;
+    right: 120px;
+}
+
+.header_menu_link {
+    text-decoration: none;
+}
+
+.header_menu_link_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.support_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #533738;
+    max-width: 450px;
+    padding-bottom: 24px;
+}
+
+.wrapper_main {
+    max-width: 1036px;
+    margin: 0 auto;
+}
+
+.text_info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    max-width: 380px;
+    padding-bottom: 21px;
+}
+
+.button_request {
+    width: 309.14px;
+    height: 74px;
+    border: none;
+    background: rgba(204, 139, 134, 1);
+    transition: 0.5s;
+}
+
+.button_request:hover {
+    background: rgb(204, 167, 164);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button_request_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #533738;
+}
+
+.about_us {
+    background: rgba(239, 230, 228, 1);
+    min-height: 650px;
+    max-width: 100%;
+}
