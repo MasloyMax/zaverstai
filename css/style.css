@@ -103,6 +103,10 @@ h1 {
     cursor: pointer;
 }
 
+._button_request{
+    color: black;
+}
+
 .button_request_text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -116,4 +120,95 @@ h1 {
     background: rgba(239, 230, 228, 1);
     min-height: 650px;
     max-width: 100%;
+}
+
+.about_us_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    text-align: center;
+    padding-top: 65px;
+    }
+
+.about_cotent_block{
+    padding-top: 65px;
+    display: flex;
+}
+
+.about_us_text{
+    padding-left: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 528px;
+}
+
+.how_many{
+    min-height: 273px;
+    background: #8D7370;
+}
+
+.how_many_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 106px;
+}
+
+.how_many_title{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.how_many_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.our_work{
+    background: rgba(239, 230, 228, 1);
+    min-height: 1219px;
+}
+
+.our_work_wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.our_work_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    padding-top: 56px;
+    padding-bottom: 40px;
+}
+
+.img_our_work{
+    padding-right: 20px;
+}
+
+.block_image_top{
+    padding-bottom: 20px;
+}
+
+.img_our_work_one{
+    max-width: 488px;
+    min-height: 451px;
 }
