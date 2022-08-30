@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -184,7 +185,7 @@ h1 {
 }
 
 .our_work_wrapper{
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -199,16 +200,31 @@ h1 {
     padding-top: 56px;
     padding-bottom: 40px;
 }
-
-.img_our_work{
+.our_work_image_content_block{
+    display: inline-block;
     padding-right: 20px;
-}
-
-.block_image_top{
     padding-bottom: 20px;
 }
 
-.img_our_work_one{
-    max-width: 488px;
-    min-height: 451px;
+._our_work_image_content_block{
+    cursor: pointer;
 }
+
+.box-image{
+    overflow: hidden;
+}
+
+.our_work_watch_link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #533738;
+    display: block;
+    text-align: center;
+    background: url('../img/icons/raight_arrow_our_work.svg') no-repeat 730px 12px;
+}
+
+
+
