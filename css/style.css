@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -104,7 +103,7 @@ h1 {
     cursor: pointer;
 }
 
-._button_request{
+._button_request {
     color: black;
 }
 
@@ -123,7 +122,7 @@ h1 {
     max-width: 100%;
 }
 
-.about_us_title{
+.about_us_title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -133,14 +132,14 @@ h1 {
     color: #533738;
     text-align: center;
     padding-top: 65px;
-    }
+}
 
-.about_cotent_block{
+.about_cotent_block {
     padding-top: 65px;
     display: flex;
 }
 
-.about_us_text{
+.about_us_text {
     padding-left: 64px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -150,18 +149,18 @@ h1 {
     max-width: 528px;
 }
 
-.how_many{
+.how_many {
     min-height: 273px;
     background: #8D7370;
 }
 
-.how_many_container{
+.how_many_container {
     display: flex;
     justify-content: space-between;
     padding-top: 106px;
 }
 
-.how_many_title{
+.how_many_title {
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
@@ -169,7 +168,7 @@ h1 {
     text-align: center;
 }
 
-.how_many_text{
+.how_many_text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -179,17 +178,17 @@ h1 {
     color: #FFFFFF;
 }
 
-.our_work{
+.our_work {
     background: rgba(239, 230, 228, 1);
     min-height: 1219px;
 }
 
-.our_work_wrapper{
+.our_work_wrapper {
     max-width: 1240px;
     margin: 0 auto;
 }
 
-.our_work_title{
+.our_work_title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -200,31 +199,229 @@ h1 {
     padding-top: 56px;
     padding-bottom: 40px;
 }
-.our_work_image_content_block{
+
+.our_work_image_content_block {
     display: inline-block;
     padding-right: 20px;
     padding-bottom: 20px;
 }
 
-._our_work_image_content_block{
-    cursor: pointer;
-}
-
-.box-image{
+.our_work_image_content_block-content {
     overflow: hidden;
 }
 
-.our_work_watch_link{
+.boxImg {
+    overflow: hidden;
+    transition: .5s;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(100, 72, 69, 0.8);
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+
+.boxImg:hover img {
+    /* transform: rotate(0deg) scale(2); */
+    /* filter: blur(2px); */
+    transition: .5s;
+    cursor: pointer;
+}
+
+.boxImg:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+.boxImg:hover .container::before {
+    /* transform: translateX(155%) rotate(45deg) scale(2); */
+    transition: .5s;
+    opacity: .6;
+}
+
+.boxImg:hover .container::after {
+    /* transform: translateX(60%) rotate(45deg) scale(2); */
+    transition: .5s;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.boxImg:hover .text h1 {
+    transform: scale(1);
+}
+
+.boxImg:hover .text p {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    color: #e9e8e8;
+    text-align: center;
+    z-index: 10;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
-    color: #533738;
-    display: block;
-    text-align: center;
-    background: url('../img/icons/raight_arrow_our_work.svg') no-repeat 730px 12px;
 }
 
+.text h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    transform: scale(0);
+    transition: .5s;
+    color: rgb(248, 245, 245);
+}
+
+.text p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 100px;
+    text-align: justify;
+    transform: scale(2);
+    transition: .5s;
+    opacity: 0;
+    color: rgb(248, 245, 245);
+}
+
+.our_work_watch_link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #533738;
+    background: url('../img/icons/raight_arrow_our_work.svg') no-repeat 740px 12px;
+    cursor: pointer;
+    padding-bottom: 40px;
+}
+
+.team{
+    background: #E2C4BA;
+    min-height: 988px;
+}
+
+.team_container-title h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.team_image_container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.team_image_text{
+    max-width: 320px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+
+.reviews{
+    background: #efe6e4;
+    min-height: 790px;
+}
+
+.reviews_slider{
+    
+}
+
+.button_reviews_slider{
+    display: flex;
+}
+
+.reviews_title-block h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.reviews_slider_click{
+    background: #CC8B86;
+    background-image: url("../img/icons/left_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 72px;
+    height: 72px;
+    border: none;
+    border-radius: 50%;
+    padding-right: 29px;
+}
+
+.reviews_slider_click:hover{
+    background: #8D7370;
+    background-image: url("../img/icons/left_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.reviews_slider_click:last-child{
+    float: right;
+    background-image: url("../img/icons/raight_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reviews_slider_click:last-child:hover{
+    background: #8D7370;
+    background-image: url("../img/icons/raight_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.rebiews_text{
+    max-width: 407px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
 
 
