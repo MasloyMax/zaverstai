@@ -105,13 +105,13 @@ h1 {
 }
 
 .button_request:hover {
-    background: rgb(204, 167, 164);
+    background: none;
     transition: 0.5s;
     cursor: pointer;
-}
-
-._button_request {
-    color: black;
+    font-size: 25px;
+    border: 1px solid #1a1919;
+    color: #1a1919;
+    border-radius: 50%;
 }
 
 .button_request_text {
@@ -329,6 +329,10 @@ h1 {
     padding-bottom: 40px;
 }
 
+.our_work_watch_link:hover{
+    color: #c9aba9;
+}
+
 .team {
     background: #E2C4BA;
     min-height: 650px;
@@ -494,19 +498,69 @@ h1 {
     color: #FFFFFF;
     margin-right: 500px;
 } */
-.footer_form-input input:focus::-webkit-input-placeholder {color: transparent;}
-.footer_form-input input:focus::-moz-placeholder          {color: transparent;}
-.footer_form-input input:focus:-moz-placeholder           {color: transparent;}
-.footer_form-input input:focus:-ms-input-placeholder      {color: transparent;}
-
-.footer_form-input input::placeholder {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #F6EDE9;
+.form-text {
+    margin-bottom: 34px;
 }
+
+.form-action p {
+    position: relative;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.text-input {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.text-input:focus + .input-label,
+.text-input:valid:not(:placeholder-shown) + .input-label {
+    bottom: 40px;
+    transition: 0.2s ease-in;
+}
+
+.input-label {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    transition: 0.2s ease-in;
+}
+
+.submit-button{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: 2px solid #cc8b86;
+    background-color: #cc8b86;
+    width: 310px;
+    min-height: 75px;
+    transition: 0.5s ease;
+}
+
+.submit-button:hover{
+    color: white;
+    font-size: 25px;
+    background: #8D7370;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.5s ease;
+    border-radius: 50%;
+}
+/* .footer_form-input input::placeholder {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+} */
 
 .footer_form-title h2 {
     font-family: 'Montserrat';

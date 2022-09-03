@@ -14,39 +14,39 @@
         <section class="section_header_menu">
             <div class="logo_scandi">
                 <img src="../zaverstai/img/icons/logo.svg" alt="ScandiLogo" class="logo_scandi_img"></img>
-                <a href="#" class="scandi_link">
+                <a href="file:///D:/web/zaverstai/zaverstai/index.html?#header_menu_click" class="scandi_link">
                     <p class="scandi_link_text">Scandi</p>
                 </a>
             </div>
             <div class="menu_wrapper">
                 <ul class="header_menu_list">
                     <li class="header_menu_element">
-                        <a href="#" class="header_menu_link">
+                        <a href="#header_menu_about" class="header_menu_link">
                             <p class="header_menu_link_text">О компании</p>
                         </a>
                     </li>
                     <li class="header_menu_element">
-                        <a href="#" class="header_menu_link">
+                        <a href="#our_work_click" class="header_menu_link">
                             <p class="header_menu_link_text">Портфолио</p>
                         </a>
                     </li>
                     <li class="header_menu_element">
-                        <a href="#" class="header_menu_link">
+                        <a href="#team_click" class="header_menu_link">
                             <p class="header_menu_link_text">Команда</p>
                         </a>
                     </li>
                     <li class="header_menu_element">
-                        <a href="#" class="header_menu_link">
+                        <a href="#how_many_click" class="header_menu_link">
                             <p class="header_menu_link_text">Как мы работаем</p>
                         </a>
                     </li>
                     <li class="header_menu_element">
-                        <a href="#" class="header_menu_link">
+                        <a href="#reviews_click" class="header_menu_link">
                             <p class="header_menu_link_text">Отзывы клиентов</p>
                         </a>
                     </li>
                     <li class="header_menu_element">
-                        <a href="#" class="header_menu_link">
+                        <a href="#footer_click" class="header_menu_link">
                             <p class="header_menu_link_text">Оставить заявку</p>
                         </a>
                     </li>
@@ -76,7 +76,7 @@
         <div class="wrapper_main">
             <div class="about_us_container">
                 <div class="about_title_block">
-                    <h2 class="about_us_title">О нас</h2>
+                    <h2 id="header_menu_about" class="about_us_title">О нас</h2>
                 </div>
                 <div class="about_cotent_block">
                     <img src="./img/content/about_us_image.jpg" alt="" class="about_us_img">
@@ -89,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="how_many">
+    <section id="how_many_click" class="how_many">
         <div class="wrapper_main">
             <div class="how_many_container">
                 <div class="how_many_block">
@@ -109,7 +109,7 @@
     </section>
     <section class="our_work">
         <div class="our_work_wrapper">
-            <h4 class="our_work_title">наши работы</h4>
+            <h4 id="our_work_click" class="our_work_title">наши работы</h4>
             <div class="our_work_image_block">
                 <div class="our_work_image_content_block">
                     <div class="boxImg">
@@ -180,7 +180,7 @@
     </section>
     <section class="team">
         <div class="wrapper_main">
-            <div class="team_container">
+            <div id="team_click" class="team_container">
                 <div class="team_container-title">
                     <h2>команда</h2>
                 </div>
@@ -208,7 +208,7 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section id="reviews_click" class="reviews">
         <div class="wrapper_main">
             <div class="slider">
                 <div class="reviews_block">
@@ -266,7 +266,7 @@
             </div>
         </div>
     </section>
-    <footer class="application">
+    <footer id="footer_click" class="application">
         <div class="wrapper_main">
             <div class="footer_application">
                 <div class="footer_applicatiom-container">
@@ -278,11 +278,22 @@
                             <p>Оставьте свои контакты. Менеджер перезвонит<br>
                                 в удобное вам время и ответит на все вопросы.</p>
                         </div>
-                        <div class="footer_form-input">
+                        <!-- <div class="footer_form-input">
                             <input type="text" placeholder="Ваше имя">
                             <input type="text" placeholder="Введите Телефон">
                             <button>Оставить заявку</button>
-                        </div>
+                        </div> -->
+                        <form action="#" method="post" class="form-action">
+                            <p>
+                                <input type="text" class="text-input" id="name" name="name" required>
+                                <label for="name" class="input-label">Ваше имя</label>
+                            </p>
+                            <p>
+                                <input type="tel" class="text-input" id="phone" name="phone" required>
+                                <label for="phone" class="input-label">Введите телефон</label>
+                            </p>
+                            <button class="submit-button button" type="submit">Оставить заявку</button>
+                        </form>
                     </div>
                     <div class="footer_map">
                         <iframe
@@ -294,6 +305,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/javascript.js"></script>
 </body>
 
 </html>
