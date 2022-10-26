@@ -6,20 +6,54 @@
 p,
 h2,
 h1 {
-    color: #533738;
+    color: #fcf7f7;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+.menu_wrapper {
+    justify-content: space-between;
+    max-width: 844px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1334px) {
+    .menu_wrapper {
+        max-width: 1098px;
+    }
+}
+
+@media(max-width:1098px) {
+    .menu_wrapper {
+        max-width: 574px;
+    }
+}
+
+@media(max-width:574px) {
+    .menu_wrapper {
+        max-width: 420px;
+    }
+}
+
+@media(max-width:420px) {
+    .menu_wrapper {
+        max-width: 238px;
+    }
+}
+
 .section_header_menu {
     background: url("../img/back/list_one_background.jpg") center center/cover no-repeat;
     min-height: 715px;
+    height: 715px;
 }
 
 .logo_scandi {
     padding-left: 98px;
     padding-top: 36px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .scandi_link_text {
@@ -33,23 +67,18 @@ h1 {
 
 .header_menu_list {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     list-style-type: none;
     justify-content: space-between;
     margin-top: -22px;
 }
 
-.menu_wrapper {
-    justify-content: space-between;
-    max-width: 844px;
-    margin: 0 auto;
-    padding-bottom: 94px;
-}
-
 .number {
     position: absolute;
     top: 36px;
     right: 120px;
+    flex-wrap: wrap;
 }
 
 .header_menu_link {
@@ -76,7 +105,7 @@ h1 {
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
-    color: #533738;
+    color: #f5f4f4;
     max-width: 450px;
     padding-bottom: 24px;
 }
@@ -91,21 +120,22 @@ h1 {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #533738;
+    color: #fdfafa;
     max-width: 380px;
     padding-bottom: 21px;
 }
 
 .button_request {
-    width: 309.14px;
-    height: 74px;
+    max-width: 309.14px;
+    min-height: 74px;
+    padding: 25px 65px;
     border: none;
     background: rgba(204, 139, 134, 1);
     transition: 0.5s;
 }
 
 .button_request:hover {
-    background: none;
+    background: white;
     transition: 0.5s;
     cursor: pointer;
     font-size: 25px;
